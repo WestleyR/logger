@@ -6,7 +6,7 @@ This is a VERRY simple c message printer with color.
 
 ## Install:
 
-Install via [clib](github.com/clib/clib):
+Install via [clib](https://github.com/clib/clib):
 
 ```
 $ clib install WestleyR/logger
