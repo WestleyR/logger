@@ -15,5 +15,11 @@ int main() {
 
     print_warningf("This is a warning message.\n");
 
+    print_debugf("With debug off, you should *not* see this...\n");
+
+    set_debug(1);
+
+    print_debugf("With debug on, you should see this.\n");
+
     return(0);
 }

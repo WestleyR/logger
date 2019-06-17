@@ -1,6 +1,6 @@
 // Created by: WestleyR
 // email: westleyr@nym.hush.com
-// Date: Apr 4, 2019
+// Date: Jun 16, 2019
 // https://github.com/WestleyR/logger
 // version-1.0.0
 //
@@ -16,8 +16,10 @@
 #include <stdarg.h>
 
 void set_verbose(int);
+void set_debug(int);
 
 void print_verbosef(const char*, ...);
+void print_debugf(const char*, ...);
 void print_errorf(const char*, ...);
 void print_warningf(const char*, ...);
 

@@ -1,7 +1,7 @@
 # Created by: WestleyR
 # email: westleyr@nym.hush.com
-# Date: Apr 1, 2019
-# https://github.com/WestleyR/tabspaces
+# Date: Jun 16, 2019
+# https://github.com/WestleyR/logger
 # version-1.0.0
 #
 # The Clear BSD License
@@ -16,7 +16,7 @@
 CC = gcc
 
 CFLAG = -Wall
-LDFLAGS =
+LDFLAGS ?=
 
 TARGET = example
 

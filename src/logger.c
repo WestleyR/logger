@@ -1,6 +1,6 @@
 // Created by: WestleyR
 // email: westleyr@nym.hush.com
-// Date: Apr 4, 2019
+// Date: Jun 16, 2019
 // https://github.com/WestleyR/logger
 // version-1.0.0
 //
@@ -24,9 +24,14 @@
 #include "logger.h"
 
 int verbose_print = 0;
+int debug_print = 0;
 
 void set_verbose(int setting) {
     verbose_print = setting;
+}
+
+void set_debug(int setting) {
+    debug_print = setting;
 }
 
 void print_verbosef(const char* restrict format, ...) {
@@ -35,6 +40,20 @@ void print_verbosef(const char* restrict format, ...) {
     }
 
     printf("%sVERBOSE:%s ", MAGENTA, COLOR_RESET);
+    va_list args;
+    va_start(args, format);
+    vprintf(format, args);
+    va_end(args);
+
+    return;
+}
+
+void print_debugf(const char* restrict format, ...) {
+    if (debug_print == 0) {
+        return;
+    }
+
+    printf("%sDEBUG:  %s ", CYAN, COLOR_RESET);
     va_list args;
     va_start(args, format);
     vprintf(format, args);
