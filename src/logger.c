@@ -50,7 +50,7 @@ void print_log_debugf(const char* func, const char* format, ...) {
         return;
     }
 
-    printf("%sDEBUG:%s    %-20s  ", CYAN, COLOR_RESET, ret_func(func));
+    printf("%sDEBUG:%s    %-28s  ", CYAN, COLOR_RESET, ret_func(func));
     va_list args;
     va_start(args, format);
     vprintf(format, args);
@@ -61,7 +61,7 @@ void print_log_debugf(const char* func, const char* format, ...) {
 
 void print_log_errorf(const char* func, const char* format, ...) {
 	if (debug_print != 0) {
-        fprintf(stderr, "%sERROR:%s    %-20s  ", RED, COLOR_RESET, ret_func(func));
+        fprintf(stderr, "%sERROR:%s    %-28s  ", RED, COLOR_RESET, ret_func(func));
     } else {
         fprintf(stderr, "%sERROR:%s    ", RED, COLOR_RESET);
     }
@@ -77,7 +77,7 @@ void print_log_errorf(const char* func, const char* format, ...) {
 
 void print_log_warningf(const char* func, const char* format, ...) {
 	if (debug_print != 0) {
-        fprintf(stderr, "%sWARNING:%s  %-20s  ", YELLOW, COLOR_RESET, ret_func(func));
+        fprintf(stderr, "%sWARNING:%s  %-28s  ", YELLOW, COLOR_RESET, ret_func(func));
     } else {
         fprintf(stderr, "%sWARNING:%s  ", YELLOW, COLOR_RESET);
     }
@@ -97,7 +97,7 @@ void print_log_verbosef(const char *func, const char *format, ...) {
     }
 
     if (debug_print != 0) {
-        printf("%sVERBOSE:%s  %-20s  ", MAGENTA, COLOR_RESET, ret_func(func));
+        printf("%sVERBOSE:%s  %-28s  ", MAGENTA, COLOR_RESET, ret_func(func));
     } else {
         printf("%sVERBOSE:%s  ", MAGENTA, COLOR_RESET);
     }
@@ -111,7 +111,7 @@ void print_log_verbosef(const char *func, const char *format, ...) {
 
 void print_log_infof(const char *func, const char *format, ...) {
     if (debug_print != 0) {
-        printf("%sINFO:%s     %-20s  ", BLUE, COLOR_RESET, ret_func(func));
+        printf("%sINFO:%s     %-28s  ", BLUE, COLOR_RESET, ret_func(func));
     } else {
         printf("%sINFO:%s     ", BLUE, COLOR_RESET);
     }
