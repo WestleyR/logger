@@ -14,6 +14,10 @@ $ clib install WestleyR/logger
 
 <br>
 
+Or copy the contents of the `src` directory to your project's `src` directory.
+
+<br>
+
 ## Example:
 
 
@@ -45,7 +49,7 @@ int main() {
 }
 ```
 
-Then add this flag to you Makefile:
+Then add this flag to you Makefile: _(only if you used clib to install, otherwise you compile as normal)_
 
 ```
 CFLAGS += -I deps
