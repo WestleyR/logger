@@ -2,21 +2,27 @@
 
 This is a VERRY simple c message printer with color.
 
-<br>
-
 ## Install:
 
-Install via [clib](https://github.com/clib/clib):
+Install via [clib](https://github.com/clibs/clib):
 
 ```
 $ clib install WestleyR/logger
 ```
 
-<br>
+Or add to your `clib.json`:
 
-Or copy the contents of the `src` directory to your project's `src` directory.
+```json
+"dependencies": {
+  "WestleyR/logger": "v1.1.0"
+}
+```
 
-<br>
+**Be sure to check the [latest release](https://github.com/WestleyR/logger/releases)**
+
+#### Alternative install:
+
+Copy the contents of the `src` directory to your project's `src` directory.
 
 ## Example:
 
@@ -52,17 +58,17 @@ int main() {
 Then add this flag to you Makefile: _(only if you used clib to install, otherwise you compile as normal)_
 
 ```
-CFLAGS += -I deps
+CFLAGS += -Ideps
 ```
 
 <br>
 
-## License:
+## License
 
 ```
 The Clear BSD License
 
-Copyright (c) 2019 WestleyR
+Copyright (c) 2019-2020 WestleyR
 All rights reserved.
 
 This software is licensed under a Clear BSD License.

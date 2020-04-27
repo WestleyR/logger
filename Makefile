@@ -1,12 +1,13 @@
 # Created by: WestleyR
-# email: westleyr@nym.hush.com
-# Date: Jun 16, 2019
-# https://github.com/WestleyR/logger
-# version-1.0.0
+# Email: westleyr@nym.hush.com
+# Url: https://github.com/WestleyR/logger
+# Last modified date: 2020-04-26
+#
+# This file is licensed under the terms of
 #
 # The Clear BSD License
 #
-# Copyright (c) 2019 WestleyR
+# Copyright (c) 2019-2020 WestleyR
 # All rights reserved.
 #
 # This software is licensed under a Clear BSD License.
@@ -16,7 +17,6 @@
 CC = gcc
 
 CFLAG = -Wall
-LDFLAGS ?=
 
 TARGET = example
 

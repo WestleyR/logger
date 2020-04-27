@@ -1,12 +1,13 @@
 // Created by: WestleyR
-// email: westleyr@nym.hush.com
-// Date: Aug 10, 2019
-// https://github.com/WestleyR/logger
-// version-1.0.2
+// Email: westleyr@nym.hush.com
+// Url: https://github.com/WestleyR/logger
+// Last modified date: 2020-04-26
+//
+// This file is licensed under the terms of
 //
 // The Clear BSD License
 //
-// Copyright (c) 2019 WestleyR
+// Copyright (c) 2019-2020 WestleyR
 // All rights reserved.
 //
 // This software is licensed under a Clear BSD License.
@@ -32,6 +33,14 @@ void set_verbose(int setting) {
 
 void set_debug(int setting) {
     debug_print = setting;
+}
+
+int is_verbose() {
+    return verbose_print;
+}
+
+int is_debug() {
+    return debug_print;
 }
 
 char* ret_func(const char* func) {
